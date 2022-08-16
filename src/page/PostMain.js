@@ -1,8 +1,11 @@
 import React from 'react';
+import PostList from "./PostList";
 
-function PostMain(props) {
+function PostMain() {
     return (
-        <div>메인페이지</div>
+        <div>
+            <PostList />
+        </div>
     );
 }
 

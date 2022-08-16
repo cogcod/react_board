@@ -1,8 +1,11 @@
 import React from 'react';
+import CommonTable from "../table/CommonTable";
 
-function PostList(props) {
+function PostList() {
     return (
-        <div></div>
+        <>
+            <CommonTable header={['글번호', '제목', '등록일', '조회수']} />
+        </>
     );
 }
 
