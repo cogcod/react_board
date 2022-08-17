@@ -1,8 +1,10 @@
 import React from 'react';
 
-function CommonTableRow(props) {
+function CommonTableRow({children}) {
     return (
-        <div></div>
+        <tr className="common-table-row">
+            { children }
+        </tr>
     );
 }
 

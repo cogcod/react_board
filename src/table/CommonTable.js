@@ -1,4 +1,5 @@
 import React from 'react';
+import './CommonTable.css';
 
 function CommonTable(props) {
     // 부모컴포넌트인 PostList에서 props 값을 전달해준다.
@@ -10,7 +11,7 @@ function CommonTable(props) {
                 <thead>
                     <tr>
                         {
-                            // header가 배열형태 이기 때문에 map으로 각 아이템을 td 태그 안에 넣어 뿌려준다.
+                            // header(배열형태)를 props로 받아와서 map으로 각 아이템을 td 태그 안에 넣어 뿌려준다.
                             header.map((item, index) => {
                                 return (
                                     <td className="common-table-header" key={index}>{item}</td>
@@ -20,8 +21,8 @@ function CommonTable(props) {
                     </tr>
                 </thead>
             </table>
-            <tbody>
-                {children}
+            <tbody className="common-table-body">
+                { children }
             </tbody>
         </div>
     );
