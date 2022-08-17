@@ -3,35 +3,35 @@ const postData = [
         "no": 1,
         "title": "첫번째 게시글 입니다.",
         "content": "첫번째 게시글 내용입니다.",
-        "createData": "2022-08-01",
+        'createDate': "2022-08-01",
         "readCount": 6
     },
     {
         "no": 2,
         "title": "두번째 게시글 입니다.",
         "content": "두번째 게시글 내용입니다.",
-        "createData": "2022-08-01",
+        "createDate": "2022-08-01",
         "readCount": 12
     },
     {
         "no": 3,
         "title": "세번째 게시글 입니다.",
         "content": "세번째 게시글 내용입니다.",
-        "createData": "2022-08-01",
+        "createDate": "2022-08-01",
         "readCount": 4
     },
     {
         "no": 4,
         "title": "네번째 게시글 입니다.",
         "content": "네번째 게시글 내용입니다.",
-        "createData": "2022-08-01",
+        "createDate": "2022-08-01",
         "readCount": 5
     },
     {
         "no": 5,
         "title": "다섯번째 게시글 입니다.",
         "content": "다섯번째 게시글 내용입니다.",
-        "createData": "2022-08-01",
+        "createDate": "2022-08-01",
         "readCount": 2
     }
 ]
@@ -43,7 +43,8 @@ const postData = [
 */
 
 const getPostByNo = findNum => {
-    const array = postData.filter(x => x.no === findNum); // postData의 한 객체(x)의 no가 no와 맞다면?????
+    // console.log('here!!') -> 디버깅 하고자 하는 위치를(filter) 찾기 위해 작성
+    const array = postData.filter(x => x.no === Number(findNum));
     if(array.length === 1){
         return array[0];
     }

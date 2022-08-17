@@ -6,8 +6,9 @@
 
 .post-view-go-list-btn {
     border: 0;
+    cursor:pointer;
     padding: 10px;
-    background-color: #ffd9d9;
+    background-color: #eceaea;
 }
 
 .post-view-row {
