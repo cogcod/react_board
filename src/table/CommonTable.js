@@ -22,6 +22,7 @@ function CommonTable(props) {
                 </thead>
             </table>
             <tbody className="common-table-body">
+                {/* PostList에 있는 CommonTable 안의 내용을 children으로 가져와 이 곳에 출력하도록! */}
                 { children }
             </tbody>
         </div>
