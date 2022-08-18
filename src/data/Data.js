@@ -51,7 +51,22 @@ const getPostByNo = findNum => {
     return null;
 }
 
+// 글쓰기 함수 : 기존 데이터 마지막 요소에 push
+function insertPost(post) {
+ postData.push(post);
+ return postData;
+}
+
+// 데이터(배열) 마지막 no + 1 해서 글쓰기 페이지에 출력하기
+// function getNextNo() {
+//     const nextIdx = postData.length;
+//     return nextIdx;
+// }
+
+
 export {
     postData,
-    getPostByNo
+    getPostByNo,
+    insertPost,
+    // getNextNo
 }
