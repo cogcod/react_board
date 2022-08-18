@@ -1,14 +1,16 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import PostMain from './page/PostMain';
+import PostList from './page/PostList';
 import PostView from "./page/PostView";
+import PostNew from "./page/PostNew";
 
 function App() {
   return (
       <div>
           <BrowserRouter>
               <Routes>
-                  <Route path="/" element={<PostMain />}/>
+                  <Route path="/" element={<PostList />}/>
+                  <Route path="/postnew" element={<PostNew />}/>
                   <Route path="/postview/:no" element={<PostView />}/>
                   {/* :no 는 게시글 번호에 해당하는 상세페이지로 이동 */}
               </Routes>
