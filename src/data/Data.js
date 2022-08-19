@@ -43,7 +43,7 @@ const postData = [
 */
 
 const getPostByNo = findNum => {
-    // console.log('here!!') -> 디버깅 하고자 하는 위치를(filter) 찾기 위해 작성
+    console.debug('here!!') //디버깅 하고자 하는 위치를(filter) 찾기 위해 작성
     const array = postData.filter(x => x.no === Number(findNum));
     if(array.length === 1){
         return array[0];
