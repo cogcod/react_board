@@ -1,5 +1,5 @@
 import React from 'react';
-import { insertPost, postData } from "../data/Data";
+import { insertPost, postData } from "../../data/Data";
 
 // 날짜 추출 함수
 function formatDate(){

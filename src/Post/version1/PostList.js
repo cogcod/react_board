@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import CommonTable from "../table/CommonTable";
-import CommonTableRow from "../table/CommonTableRow";
-import CommonTableColumn from "../table/CommonTableColumn";
-import { postData } from "../data/Data";
+import CommonTable from "../../table/CommonTable";
+import CommonTableRow from "../../table/CommonTableRow";
+import CommonTableColumn from "../../table/CommonTableColumn";
+import { postData } from "../../data/Data";
 import { Link, useNavigate } from "react-router-dom";
 
 function PostList() {

@@ -1,19 +1,19 @@
 import React from 'react';
-// import { useParams } from "react-router-dom";
+import { getPostByNo } from "../../data/Data";
+import { useParams, useNavigate } from "react-router-dom";
 import './PostList.css';
-import {useParams} from "react-router-dom";
-import {getPostByNo} from "../data/Data";
 
 function PostView() {
     const params = useParams();
     const findData = getPostByNo(params.no);
+    let history = useNavigate();
 
     return (
-        <div className="post-view-container">
+        <>
             <h2 align="center">게시글 상세정보</h2>
             <div className="post-view-wrapper">
                 {
-                    findData ? (
+                    params ? (
                         <>
                             <div className="post-view-row">
                                 <label>게시글 번호</label>
@@ -38,8 +38,12 @@ function PostView() {
                         </>
                     ) : "해당 게시글을 찾을 수 없습니다."
                 }
+
+                <button className="post-view-go-list-btn" onClick={
+                    () => history("/")
+                }>목록으로 돌아가기</button>
             </div>
-        </div>
+        </>
     );
 }
 
