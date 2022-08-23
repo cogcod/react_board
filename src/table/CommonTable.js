@@ -6,25 +6,27 @@ function CommonTable(props) {
     const { header, children } = props;
 
     return (
-        <div>
-            <table className="common-table">
-                <thead>
-                    <tr>
-                        {
-                            // header(배열형태)를 props로 받아와서 map으로 각 아이템을 td 태그 안에 넣어 뿌려준다.
-                            header.map((item, index) => {
-                                return (
-                                    <td className="common-table-header" key={index}>{item}</td>
-                                )
-                            })
-                        }
-                    </tr>
-                </thead>
-            </table>
-            <tbody className="common-table-body">
-                {/* PostList에 있는 CommonTable 안의 내용을 children으로 가져와 이 곳에 출력하도록! */}
-                { children }
-            </tbody>
+        <div className="common-container">
+            <div className="common-wrapper">
+                <table className="common-table">
+                    <thead>
+                        <tr>
+                            {
+                                // header(배열형태)를 props로 받아와서 map으로 각 아이템을 td 태그 안에 넣어 뿌려준다.
+                                header.map((item, index) => {
+                                    return (
+                                        <td className="common-table-header" key={index}>{item}</td>
+                                    )
+                                })
+                            }
+                        </tr>
+                    </thead>
+                    <tbody className="common-table-body">
+                        {/* PostList에 있는 CommonTable 안의 내용을 children으로 가져와 이 곳에 출력하도록! */}
+                        { children }
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };

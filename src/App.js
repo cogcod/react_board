@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import PostList from './page/PostList';
-import PostView from "./page/PostView";
-import PostNew from "./page/PostNew";
+import PostList from './version2/PostList';
+import PostView from "./version2/PostView";
+import PostNew from "./version2/PostNew";
 
 function App() {
   return (

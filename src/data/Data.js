@@ -43,7 +43,6 @@ const postData = [
 */
 
 const getPostByNo = findNum => {
-    console.debug('here!!') //디버깅 하고자 하는 위치를(filter) 찾기 위해 작성
     const array = postData.filter(x => x.no === Number(findNum));
     if(array.length === 1){
         return array[0];
@@ -57,16 +56,8 @@ function insertPost(post) {
  return postData;
 }
 
-// 데이터(배열) 마지막 no + 1 해서 글쓰기 페이지에 출력하기
-// function getNextNo() {
-//     const nextIdx = postData.length;
-//     return nextIdx;
-// }
-
-
 export {
     postData,
     getPostByNo,
     insertPost,
-    // getNextNo
 }

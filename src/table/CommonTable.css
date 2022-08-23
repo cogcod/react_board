@@ -1,28 +1,33 @@
 
-.common-table {
-    /*width: 80%;*/
-    /*margin: 0 auto;*/
+.common-container{
     text-align: center;
-    border-spacing: 0;
+}
+
+.common-wrapper{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.common-table {
+    width: 700px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .common-table-header{
-    padding: 0 22px;
-}
-
-.common-table-header-column {
-    border-bottom: 1px solid #e8e8e8;
-    padding: 0;
-    font-size: 16px;
-    padding: 10px 5px;
-    font-weight: bold;
-}
-
-.common-table-row:hover {
-    background-color: #eceaea;
-    cursor: pointer;
+    padding: 10px 22px;
+    background: darkseagreen;
 }
 
 .common-table-column {
-    padding: 10px 5px;
+    padding: 10px 48px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.common-table-row:hover {
+    background-color: gainsboro;
+    cursor: pointer;
 }
